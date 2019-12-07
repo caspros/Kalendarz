@@ -141,6 +141,40 @@ private function _showDay($cellNumber){
         }
             
     }
+	
+	 /**
+    *	Function to show added events
+    */
+
+    private function _showEvent($day,$month){
+    		$day = $this->currentDay;
+        	$month = $this->currentMonth;
+	    	$servername = "localhost";
+			$username = "root";
+			$password = "";
+			$dbname = "calendar";
+			$conn = new mysqli($servername, $username, $password, $dbname);
+			$conn -> query("SET NAMES 'utf8'");
+			if ($conn -> connect_error) { die("Nie połączono z bazą danych: " . $conn -> connect_error);}
+			$sql = "SELECT id, dzien, miesiac, godzina, tytul, opis FROM events WHERE dzien=$day and miesiac=$month ORDER BY godzina";
+			$result = $conn->query($sql);
+			
+			
+			if ($result -> num_rows > 0)
+				{
+					$eventContent = ' ';
+			 		while($row = $result -> fetch_assoc())
+			 		{	
+
+			 			$godz =  $row['godzina'];
+			 			$godz1 = mb_substr($godz, 0, 5);
+						$eventContent = $eventContent.' '.$godz1.' '.$row['tytul'].'<br>';
+						
+					}
+					return $eventContent;
+				}
+
+    }
 }
 
 
