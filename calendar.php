@@ -101,11 +101,7 @@ class Calendar {
         return $content;
     }
 
-     
-}
-
-
-/* Function show day */
+     /* Function show day */
     
 private function _showDay($cellNumber){
          
@@ -145,3 +141,7 @@ private function _showDay($cellNumber){
         }
             
     }
+}
+
+
+
