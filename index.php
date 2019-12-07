@@ -47,9 +47,9 @@
 ?>
 
 <br><br>
-<form method="post" action="export.php">
+<!---<form method="post" action="export.php">
      <input type="submit" name="export" class="btn btn-success" value="Export" />
- </form>
+ </form> --->
 
 </body>
 </html>     
