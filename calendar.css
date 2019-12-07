@@ -123,3 +123,71 @@ div#calendar ul.dates li{
     outline:none;
 }
  
+div.clear{
+    clear:both;
+} 
+
+div.event{
+    font-weight: bold;
+    line-height: 12px;
+    color: #f26b30;
+    font-size: 13px;
+}
+
+div.event1{
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    height: 100px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f7f4f2;
+    float: left;
+}
+
+.button{
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: #DDD;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #ededed;
+}
+
+#addEvent{
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    border: 5px solid #f5dc87;
+    background-color: #f2e4b3;
+}
+
+.back{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #f7cd3e;
+}
+
+.back:hover{
+    background-color: #f2d266;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
