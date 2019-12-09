@@ -45,11 +45,12 @@
 	}
 	
 ?>
-
-<br><br>
-<!---<form method="post" action="export.php">
-     <input type="submit" name="export" class="btn btn-success" value="Export" />
- </form> --->
+<br><br><br><br><br><br>
+	<div id="exportBtn">
+		<form method="post" action="export.php">
+		     <input type="submit" name="export" class="myButton" value="Export" />
+		</form>
+	</div>
 
 </body>
 </html>     
