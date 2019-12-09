@@ -1,0 +1,40 @@
+* 20e9665 : Dodalem exportowanie do ics, dziala
+* 9ce62b0 : Dodalem przycisk export
+* 95d1bbd : Dodalem style do przycisku export
+* dec391c : Zrobiłem i wysłałem swoją część stylów
+* 0075a98 : Dodalem style do kalendarza
+* 1001211 : Usuwanie wydarzeń
+*   6584518 : Merge branch 'master' of https://github.com/caspros/Kalendarz
+|\  
+| * 1c23552 : Zrzucilem baze danych z localhosta
+| * 1811d23 : Dodalem formularz dodawania wydarzenia
+| * bb65a34 : Dodalem funkcje pokazujaca kalendarz na stronie
+* | 09199f2 : plik z dodawaniem wydażenia
+|/  
+* 65817d9 : Dodanie wydarzeń
+* 774816b : Chyba w złym miejscu wkleiłeś funkcje, poprawiłem
+* 8b79fb5 : Dodalem funkcje do wyswietlania dnia
+* 78c23b2 : Update calendar.php
+* 4b154ad : Added 2 functions to calculate days in month and weeks
+* b1a9b80 : Zakomentowalem przycisk export
+* d8e1632 : Update index.php
+* dab91d6 : Stworzylem index.php
+* 36d513c : Update README.md
+* d5ce247 : Delete gitbash.txt
+* db42577 : Delete monthly-h0-ol-w0-s1-bold.png
+* a2549ee : Dodalem plik txt
+* d689113 : Update README.md
+* 4cc068b : Dodaje tekst
+* 7046614 : Update README.md
+* ffd8686 : Create monthly-h0-ol-w0-s1-bold.png
+* 26182ce : Update README.md
+*   978ce10 : Merge pull request #2 from caspros/dev
+|\  
+| *   3dca78b : Merge pull request #1 from caspros/master
+| |\  
+| |/  
+|/|   
+* | 8905774 : Update README.md
+|/  
+* 2cbbb07 : Update README.md
+* e553e83 : Initial commit
