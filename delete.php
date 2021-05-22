@@ -3,11 +3,9 @@
 	// connect to datebase 
 	$miesiac=$_SESSION['miesiac'];
 	$rok = $_SESSION['currY'];
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "calendar";
-	$conn = new mysqli($servername, $username, $password, $dbname);
+    require_once 'connect.php';
+    $config = new DB_Config;
+    $conn = new mysqli($config->servername, $config->username, $config->password, $config->dbname);
 	$conn -> query("SET NAMES 'utf8'");
 	// delete data in mysql database 
 	$id = ''; 

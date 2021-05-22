@@ -21,11 +21,9 @@
 <h1>Spis wydarzeń na wybrany miesiąc:</h1>
 
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "calendar";
-	$conn = new mysqli($servername, $username, $password, $dbname);
+    require_once 'connect.php';
+    $config = new DB_Config;
+	$conn = new mysqli($config->servername, $config->username, $config->password, $config->dbname);
 	$conn -> query("SET NAMES 'utf8'");
 	if ($conn -> connect_error) { die("Nie połączono z bazą danych: " . $conn -> connect_error);}
 	if(isset($_GET['month']))

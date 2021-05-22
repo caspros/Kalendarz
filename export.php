@@ -1,11 +1,8 @@
-<?php  
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "calendar";
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  $conn -> query("SET NAMES 'utf8'");
+<?php
+    require_once 'connect.php';
+    $config = new DB_Config;
+    $conn = new mysqli($config->servername, $config->username, $config->password, $config->dbname);
+    $conn -> query("SET NAMES 'utf8'");
 
   $output = '';
 
